@@ -20,7 +20,7 @@
 	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
-	http://code.alibabatech.com/schema/dubbo https://raw.githubusercontent.com/meadlai/MDCommonWebView/master/MDCommonWebView/amcloth/WebContent/download/schema/dubbo.xsd">
+	http://code.alibabatech.com/schema/dubbo https://raw.githubusercontent.com/meadlai/dubbox/master/dubbo/dubbo.xsd">
 
 	<dubbo:application name="annotation-consumer" />
 	<dubbo:registry address="127.0.0.1:4548" />

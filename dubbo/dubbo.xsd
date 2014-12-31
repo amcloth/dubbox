@@ -156,7 +156,7 @@
 				</xsd:attribute>
 				<xsd:attribute name="scope" type="xsd:string" use="optional">
 					<xsd:annotation>
-						<xsd:documentation><![CDATA[ Defines the service visibility, choise:[local remote]. default is remote, which can be invoked by network¡£  ]]></xsd:documentation>
+						<xsd:documentation><![CDATA[ Defines the service visibility, choise:[local remote]. default is remote, which can be invoked by networkã€‚  ]]></xsd:documentation>
 					</xsd:annotation>
 				</xsd:attribute>
 			</xsd:extension>
@@ -411,7 +411,7 @@
 				<xsd:documentation><![CDATA[ The unique identifier for a bean. ]]></xsd:documentation>
 			</xsd:annotation>
 		</xsd:attribute>
-		<xsd:attribute name="address" type="xsd:string" use="required">
+		<xsd:attribute name="address" type="xsd:string" use="optional">
 			<xsd:annotation>
 				<xsd:documentation><![CDATA[ The registry address. ]]></xsd:documentation>
 			</xsd:annotation>
@@ -454,6 +454,11 @@
 		<xsd:attribute name="client" type="xsd:string" use="optional">
 			<xsd:annotation>
 				<xsd:documentation><![CDATA[ The protocol client type. ]]></xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="cluster" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation><![CDATA[ The registry cluster type. ]]></xsd:documentation>
 			</xsd:annotation>
 		</xsd:attribute>
 		<xsd:attribute name="group" type="xsd:string" use="optional">
@@ -582,6 +587,11 @@
 				<xsd:attribute name="name" type="xsd:string" use="required">
 					<xsd:annotation>
 						<xsd:documentation><![CDATA[ The method name (method.toString()). ]]></xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="executes" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation><![CDATA[ The max active requests. ]]></xsd:documentation>
 					</xsd:annotation>
 				</xsd:attribute>
 				<xsd:attribute name="stat" type="xsd:string" use="optional" default="-1">
@@ -820,7 +830,12 @@
 		</xsd:attribute>
 		<xsd:attribute name="dispather" type="xsd:string" use="optional">
 			<xsd:annotation>
-				<xsd:documentation><![CDATA[ The protocol dispather type. ]]></xsd:documentation>
+				<xsd:documentation><![CDATA[ Deprecated. replace to "dispatcher". ]]></xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="dispatcher" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation><![CDATA[ The protocol dispatcher type. ]]></xsd:documentation>
 			</xsd:annotation>
 		</xsd:attribute>
 		<xsd:attribute name="networker" type="xsd:string" use="optional">
@@ -940,7 +955,12 @@
 				</xsd:attribute>
 				<xsd:attribute name="dispather" type="xsd:string" use="optional">
 					<xsd:annotation>
-						<xsd:documentation><![CDATA[ The protocol dispather type. ]]></xsd:documentation>
+						<xsd:documentation><![CDATA[ Deprecated. replace to "dispatcher". ]]></xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="dispatcher" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation><![CDATA[ The protocol dispatcher type. ]]></xsd:documentation>
 					</xsd:annotation>
 				</xsd:attribute>
 				<xsd:attribute name="networker" type="xsd:string" use="optional">
@@ -1036,6 +1056,11 @@
 						<xsd:documentation><![CDATA[ Deprecated. Replace to protocol. ]]></xsd:documentation>
 					</xsd:annotation>
 				</xsd:attribute>
+                <xsd:attribute name="generic" type="xsd:string" use="optional">
+                    <xsd:annotation>
+                        <xsd:documentation><![CDATA[ Generic service. ]]></xsd:documentation>
+                    </xsd:annotation>
+                </xsd:attribute>
 				<xsd:anyAttribute namespace="##other" processContents="lax" />
 			</xsd:extension>
 		</xsd:complexContent>
