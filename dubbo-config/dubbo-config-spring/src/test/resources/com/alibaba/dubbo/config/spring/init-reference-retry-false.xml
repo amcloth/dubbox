@@ -17,7 +17,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
-    http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+    http://code.alibabatech.com/schema/dubbo https://raw.githubusercontent.com/meadlai/dubbox/master/dubbo/dubbo.xsd
     ">
      
     <!-- 当前应用信息配置 -->
